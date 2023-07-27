@@ -2,7 +2,6 @@
   "command": [
       "sh",
       "-c",
-      "[ -d /home ] && exit 0"
+      "ls expm.txt > /dev/null 0>&1 || exit 0"
   ]
 }
-
